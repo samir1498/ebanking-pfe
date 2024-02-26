@@ -1,0 +1,197 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 31 juil. 2022, 14:38:17
+    Author     : Samir
+*/
+
+:root {
+  --background: #f7f7f7;
+}
+.popup_div{
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left:0;
+  z-index: 1200;
+  display: none;
+  transition: .5s ease;
+
+}
+.home_content.open {
+  padding-left: 5rem;
+}
+
+
+/* style account request pop up form*/
+
+.popup {
+  display: none;
+  border-radius: 12px;
+  box-shadow: 0 0 5px #333;
+  position: absolute;
+  background: var(--background);
+  z-index: 1250;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  filter: none;
+  padding: .5rem;
+  opacity: .8;
+  transition: .5s;
+}
+
+.main{
+  white-space: nowrap
+}
+.home_content {
+  display: grid;
+  grid-template-areas:
+    "newCheck ChecksH ChecksH ChecksH"
+    "DWCheck ChecksH ChecksH ChecksH";
+  background: var(--background);
+  padding: 1rem;
+  padding-left: 5.5rem;
+  height: 100vh;
+  width: 100vw;
+  overflow: auto;
+  position: relative;
+  z-index: 1;
+  gap: .5rem
+}
+
+.newLoan{
+  display: flex;
+  flex-direction: column;
+  margin-top: 0rem;
+  padding: .5rem;
+  border-radius: 12px;
+  box-shadow: 0 0 5px #333;
+  transition: all 1s ease;
+  overflow: hidden;
+  position: relative;
+  grid-area: newCheck;
+  gap: 1rem;
+    max-width: 35rem
+
+}
+h2{
+  width: 100%;
+  padding: 1rem;
+  padding-bottom: 0rem
+}
+.newLoan form{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-self: center;
+  justify-content: center;
+}
+.newLoanTable {
+  width: 80%;
+  font-weight: bold
+}
+
+.newLoanTable tr{
+  width: 100%;
+  display: flex;
+  flex: 1 1 100%;
+  margin: 0.5rem 0rem;
+}
+.newLoanTable tr td {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0.3rem;
+
+}
+.newLoanTable tr td:first-child {
+  width: 30%;
+  flex: 1 1 30%
+}
+.newLoanTable tr td:last-child {
+  width: 50%;
+  flex: 1 1 50%
+}
+
+.newLoanTable select, .newLoanTable input {
+  width: 100%;
+  text-align: center;
+  border-radius: 12px;
+  border: none;
+  box-shadow: 0 0 2px #333;
+  height: 1.15rem;
+}
+.newLoanTable input[type='submit']{
+  width: 50%;
+  align-self: end
+}
+.ActiveLoans{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 0rem;
+  padding: .5rem;
+  border-radius: 12px;
+  box-shadow: 0 0 5px #333;
+  transition: all 1s ease;
+  overflow: hidden;
+  position: relative;
+  grid-area: DWCheck;
+  max-width: 35rem
+}
+
+.ActiveLoans form{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  padding: 2rem 1rem;
+}
+.dataTables_wrapper no-footer{
+  width: 100%;
+}
+.ActiveLoansTable{
+  width: 100%;
+  border-collapse: collapse;
+}
+
+thead{
+  background: #333;
+  color: #f7f7f7;
+  text-align: center;
+  padding: 0.5rem;
+  border: solid #333 2px;
+}
+
+.ActiveLoansTable tr{
+  border: solid 1px;
+}
+
+.ActiveLoansTable tr td{
+  text-align: center;
+  padding: 0.3rem;
+}
+
+.ActiveLoansTable tbody tr:nth-child(2n){
+  background: #e6e6e6
+}
+.Checks-History{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 0rem;
+  padding: .5rem;
+  border-radius: 12px;
+  box-shadow: 0 0 5px #333;
+  transition: all 1s ease;
+  overflow: hidden;
+  position: relative;
+  grid-area: ChecksH;
+  min-width: 28rem
+}
+

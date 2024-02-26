@@ -1,0 +1,16 @@
+<component name="libraryTable">
+  <library name="lib">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/build/web/WEB-INF/lib/postgresql-42.2.23.jar!/" />
+      <root url="jar://$PROJECT_DIR$/build/web/WEB-INF/lib/iban-1.12.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/build/web/WEB-INF/lib/mail_1.4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/build/web/WEB-INF/lib/gson-2.8.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/build/web/WEB-INF/lib/commons-io-2.11.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/build/web/WEB-INF/lib/jstl-1.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/build/web/WEB-INF/lib/itextpdf-5.5.9.jar!/" />
+      <root url="jar://$PROJECT_DIR$/build/web/WEB-INF/lib/commons-fileupload-1.4.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

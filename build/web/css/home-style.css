@@ -1,0 +1,592 @@
+.Loan-types a {
+  text-decoration: none;
+  color: #333;
+}
+
+.main {
+  display: flex;
+  margin: 1rem;
+  margin-top: 6rem;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  flex: 1 1 50%;
+}
+.main .links {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding: 0.5rem 1rem;
+}
+h3 {
+  color: green;
+  margin-bottom: 0;
+}
+
+h1 {
+  margin-bottom: 0;
+  width: 18ch;
+  margin-top: 0.5rem
+
+}
+.card h1{
+  width: 23ch
+}
+
+p {
+  color: gray;
+  width: 40ch;
+  padding: .75rem 0;
+  margin-top: 0;
+}
+
+.main img {
+  width: 45%;
+  margin-right: 0rem;
+}
+
+.Open-account {
+  border: 1px solid #333;
+  background-color: #333;
+  border-radius: 50px;
+  color: white;
+  padding: 15px;
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+
+.Open-account:hover {
+  background-color: #f7f7f7;
+  color: #333;
+}
+
+.Get-in-touch {
+  border: 1px solid #333;
+  background-color: #f7f7f7;
+  border-radius: 50px;
+  color: black;
+  padding: 15px;
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+
+.Get-in-touch:hover {
+  background-color: #333;
+  color: white;
+}
+
+.services {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.5rem
+}
+
+.Notifications {
+  display: flex;
+  justify-content: center;
+  margin: 1rem;
+  margin-top: 6rem;
+}
+
+.Notifications img {
+  width: 35%;
+}
+.safe-saving img {
+  width: 35%;
+}
+
+.safe-saving {
+  display: flex;
+  justify-content: center;
+  margin: 1rem;
+}
+
+.accounts {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 1rem;
+  height: 100%;
+  margin-top: 3rem
+}
+
+.accounts .left {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 100%;
+  align-items: center;
+}
+
+.accounts .left div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.accounts .left div h1{
+  width: 30ch;
+}
+
+
+.accounts-types {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.accounts-types div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 15rem;
+  height: 20rem;
+  box-shadow: 0px 0px 10px #a0a0a0;
+  border-radius: 16px;
+  position: relative;
+}
+.accounts-types div h3 {
+  color: #222;
+
+}
+.accounts-types div p {
+  color: #969595;
+  text-align: center;
+  width: 25ch;
+  font-size: .85rem;
+  margin-bottom:  1.5rem;
+}
+
+.accounts-types div span {
+  background-color: #333;
+  border-radius: 60%;
+  margin: 1rem;
+  padding: 1rem;
+}
+
+.accounts-types div img {
+  filter: invert(1%) sepia(1%) saturate(1%) hue-rotate(1deg) brightness(1000%) contrast(80%);
+}
+
+.accounts-types div a {
+  text-decoration: none;
+  color: #333;
+  position: absolute;
+  bottom: .5rem;
+}
+.accounts-types div a:hover {
+  cursor: pointer
+}
+
+.accounts-types div a label.link-text {
+  transition: .5s ease-out;
+  font-weight: bold;
+}
+
+.accounts-types div a label.arrow {
+  transition: .5s ease-out;
+}
+
+.accounts-types div a label.link-text:hover {
+  margin-right: 1rem;
+  transition: .5s ease-out;
+  cursor: pointer
+}
+
+.accounts-types div a label.arrow:hover {
+  margin-left: 1rem;
+  transition: .5s ease-out;
+  cursor: pointer
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  margin: 4rem 1rem;
+  width: 100%;
+}
+
+
+.card .right img {
+  width: 25rem;
+}
+
+.card .right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+}
+
+
+.card a {
+  border: 1px solid #333;
+  background-color: #333;
+  border-radius: 30px;
+  color: white;
+  margin-top: 1rem;
+  padding: 15px;
+  font-size: large;
+  text-decoration: none;
+  align-self: center;
+}
+
+.card a:hover {
+  background-color: white;
+  color: #333;
+}
+
+.Loan {
+  display: flex;
+  padding: 2rem;
+}
+
+.Loan .left{
+  align-self: start;
+}
+
+.Loan .left a {
+  border: 1px solid #333;
+  background-color: #333;
+  border-radius: 30px;
+  color: white;
+  padding: 15px;
+  font-size: large;
+  text-decoration: none;
+  align-self: center;
+  margin: 1rem 0;
+}
+
+.Loan .left a:hover {
+  background-color: white;
+  color: #333;
+}
+
+.Loan-types {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: .5rem;
+}
+.Loan-types a{
+  width: 14.1rem;
+  padding: 0;
+  margin: 0;
+}
+
+.Loan-types div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  box-shadow: 0px 0px 10px #a0a0a0;
+  border-radius: 16px;
+  border: 1px solid #f7f7f7;
+  transition: .5s ease-out;
+  white-space: nowrap;
+  width: 14rem;
+  padding: 1rem .75rem
+}
+
+.Loan-types div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  box-shadow: 0px 0px 10px #a0a0a0;
+  border-radius: 16px;
+  border: 1px solid #f7f7f7;
+  transition: .5s ease-out;
+  white-space: nowrap;
+  width: 14rem;
+  padding: 1rem .75rem
+}
+
+.Loan-types div h3 {
+  color: black;
+  margin: 1rem 0;
+}
+
+.Loan-types div ul {
+  margin: 0;
+  padding: 0;
+}
+
+.Loan-types div ul li {
+  list-style: none;
+  padding: 0.5rem 0rem;
+  font-size: .9rem;
+}
+
+.Loan-types div span {
+  background-color: #333;
+  border-radius: 100%;
+  padding: .5rem;
+}
+
+.get-started {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background-color: #333;
+  border-radius: 15px;
+  margin: 8rem 1rem;
+  margin-bottom: 2rem;
+  border: solid #333;
+  position: relative;
+  width: 90%
+}
+
+.get-started .left {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+  padding: .75rem;
+  width: 60%;
+}
+
+
+.get-started img {
+  position: absolute;
+  align-self: flex-end;
+  width: 25rem;
+}
+
+.get-started h1 {
+  color: #f7f7f7;
+}
+
+.get-started p {
+  font-size: 1rem;
+  margin: 1rem 0;
+  color: #e2e2e2;
+}
+
+.get-started a {
+  border: 1px solid #666;
+  background-color: #666;
+  border-radius: 16px;
+  color: #111;
+  padding: 15px;
+  text-decoration: none;
+  align-self: flex-start;
+}
+
+.get-started a:hover {
+  background-color: #333;
+  color: #f7f7f7;
+}
+
+@media (max-width: 900px) {
+  .main {
+    display: flex;
+    flex-direction: row;
+    width:100%;
+    margin: 3rem 0rem;
+    z-index: 10;
+    position: relative
+  }
+  .main .left>div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center
+  }
+
+  .main img {
+    display: none
+  }
+  .Open-account{
+    font-size: 1rem
+  }
+  .Get-in-touch{
+    font-size: 1rem
+  }
+  .left{
+    width: 40%;
+    display:flex;
+    flex-direction: row;
+  }
+
+  h3 {
+    color: green;
+    font-size: .9rem;
+    margin-bottom: 0;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+    margin-bottom: 0;
+    margin-top: 0.5rem;
+  }
+
+  p {
+    font-size: .8rem;
+    color: gray;
+    padding: 1rem 0rem;
+    margin-top: 0;
+  }
+  img {
+    width: 25%;
+    flex: 1 1
+  }
+  .services {
+    display: flex;
+    flex-direction: column;
+    margin: 0rem;
+    width: 100%
+  }
+
+  .Notifications {
+    margin:3rem 0rem;
+    width: 100%;
+    z-index: 1;
+    position: relative
+  }
+  .Notifications img {
+    position: absolute;
+    z-index: 0;
+    width: 15rem;
+    opacity: 0.2;
+    top: -1.5rem
+  }
+  .safe-saving {
+    margin: 3rem 0rem;
+    position: relative;
+  }
+  .safe-saving img {
+    position: absolute;
+    z-index: 0;
+    width: 15rem;
+    opacity: 0.2;
+    top: -1.5rem
+  }
+
+  .Notifications .left div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center
+  }
+  .safe-saving .left div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center
+  }
+  .accounts-types div img {
+    display: block;
+    width: fit-content
+  }
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    text-align: center;
+    margin: 0rem;
+    padding: 0rem;
+
+  }
+  .card .left{
+    width: 100%
+  }
+  .card img{
+    display: block
+  }
+  .card .left div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .card .right {
+    width:100%;
+  }
+  .card .right img{
+    width:25rem;
+  }
+
+  .card a {
+    margin-top: .5rem;
+    padding: 15px;
+    font-size: medium;
+  }
+  .Loan {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .Loan .left{
+    width: 100%;
+    height: fit-content;
+    padding: 1rem;
+    margin-bottom: 1rem;
+
+  }
+  .Loan .left div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .Loan img{
+    display: block
+  }
+
+  .Loan .left div h1{
+    width: 50ch
+  }
+  .Loan a {
+    align-self: center;
+  }
+  .Loan img{
+    width: fit-content
+  }
+  .Loan-types div{
+    padding: 1.5rem;
+    width: 14rem
+  }
+  .get-started{
+    width: 100%;
+    margin: 5rem .5rem;
+    margin-bottom: 1rem;
+    flex: 0;
+  }
+  .get-started .left{
+    padding: 0;
+    margin: 0;
+  }
+  .get-started .left div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: .5rem;
+    padding: 0rem;
+  }
+  .get-started p{
+    font-size: 0.8rem;
+    width: 30ch;
+  }
+  .get-started a{
+    font-size: .9rem;
+    padding: 10px;
+  }
+
+  .get-started img{
+    width: 21rem;
+    margin-right: 0rem;
+    padding: 0
+  }
+
+
+
+
+
+}

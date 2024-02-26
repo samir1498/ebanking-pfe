@@ -1,0 +1,21 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 5 juil. 2022, 11:37:13
+    Author     : Samir
+*/
+/* raleway-regular - latin */
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/raleway-v27-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local(''),
+    url('../fonts/raleway-v27-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/raleway-v27-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+    url('../fonts/raleway-v27-latin-regular.woff') format('woff'), /* Modern Browsers */
+    url('../fonts/raleway-v27-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('../fonts/raleway-v27-latin-regular.svg#Raleway') format('svg'); /* Legacy iOS */
+}

@@ -1,0 +1,486 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 26 juil. 2022, 12:49:37
+    Author     : Samir
+*/
+
+/* home content style */
+/* style account request pop up form*/
+
+:root {
+  --background: #f7f7f7;
+}
+
+.main{
+  white-space: nowrap
+}
+.home_content {
+  display: flex;
+  flex-wrap: wrap;
+  background: var(--background);
+  padding: 0.2rem;
+  padding-bottom: 1rem;
+  padding-left: 5.5rem;
+  padding-right: 1.5rem;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+}
+
+.home_content.open {
+  padding-left: 5rem;
+}
+
+.cards_management{
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-areas:
+    "list info"
+    "list history"
+}
+.cards_list{
+  width: 100%;
+  height: 100%;
+  grid-area: list;
+  max-width: 26rem;
+  padding: 0;
+}
+
+.card_history{
+  width: 100%;
+  height: 100%;
+  grid-area:history;
+  border-radius: 16px;
+  min-width: 35rem
+}
+
+/* card style*/
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 1s ease;
+  height: 38.5rem;
+  position: relative;
+  width: 30rem;
+  overflow: hidden;
+  margin: 0rem;
+  padding: .8rem;
+  padding-left: 2rem;
+}
+
+.background_div{
+  position: absolute;
+  background: #666;
+  height: 100vh;
+  width: 75%;
+  align-self: start;
+  top: 0;
+  left: 0;
+  border-top-right-radius: 80px;
+}
+.cards_container{
+  overflow:hidden ;
+  overflow-y: auto;
+  width: 100%
+}
+
+.card-container h2 {
+  width: 100%;
+  margin-left: 2rem;
+  padding: .8rem 0rem;
+  padding-top: 0;
+  z-index: 10;
+  color: #f7f7f7
+}
+
+.card_div {
+  border-radius: 12px;
+  width: 15rem;
+  color: #f7f7f7;
+  margin: 1.25rem;
+}
+
+.front {
+  background-image: linear-gradient(45deg, #333, #555);
+  position: relative;
+  padding: 3% 4%;
+  border-radius: 12px;
+  overflow: hidden;
+  z-index: 1;
+  cursor: pointer;
+  box-shadow: 0 0 10px #333;
+  border: 1px solid #000;
+  transition: none;
+  height: 9rem;
+}
+.front .logo{
+  font-size: .8rem;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.map-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 90%;
+  opacity: 0.3;
+  z-index: -1;
+}
+
+.card_div .balance {
+  font-size: 1.2rem;
+}
+.card-holder{
+  font-size: .8rem;
+  margin-top: 1.2rem;
+}
+
+.card-no {
+  font-size: 1.15rem;
+  margin-top: .8rem;
+}
+
+.active_card{
+  width: 21rem;
+  border-radius: 16px;
+}
+.transafer_button{
+  border-radius: 50%;
+  width: fit-content;
+  position: absolute;
+  color: white;
+  background: green;
+  border: none;
+  right: 1rem;
+  bottom:1rem;
+}
+.transafer_button i{
+  padding:.6rem .5rem;
+  font-size: 1.2rem
+}
+
+.active_card .card_div {
+  border-radius: 12px;
+  width: 100%;
+  height: 100%;
+  color: #f7f7f7;
+  margin: 0rem;
+}
+.active_card .front {
+  background-image: linear-gradient(45deg, #333, #555);
+  position: relative;
+  padding: 5% 6%;
+  border-radius: 12px;
+  overflow: hidden;
+  z-index: 1;
+  cursor: pointer;
+  box-shadow: 0 0 10px #333;
+  border: 1px solid #000;
+  transition: none;
+  height: 13rem;
+
+}
+.active_card .front .logo{
+  font-size: 1rem;
+}
+.active_card .row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.active_card .map-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 90%;
+  opacity: 0.3;
+  z-index: -1;
+}
+
+.active_card .card-no {
+  font-size: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.active_card .card_div .balance {
+  font-size: 1.8rem;
+  margin-top: .5rem;
+}
+.active_card .card-holder{
+  font-size: 1rem;
+  margin-top: 1.5rem;
+}
+.active_card .chip{
+  width: 45px;
+}
+
+.card_infos{
+  width: 100%;
+  height: 100%;
+  grid-area: info;
+  display: flex;
+  flex-wrap: wrap;
+  min-width: 35rem
+}
+.card_infos h2{
+  padding: .3rem 0.8rem;
+  width: 90%;
+}
+.table_info_container{
+  position: relative;
+  border-radius: 16px;
+  box-shadow: 0px 0px 5px gray;
+  width: 95%;
+  margin: 0rem 0.5rem;
+}
+.card_infos table{
+  width: 100%;
+  margin: .5rem;
+  padding: .5rem;
+}
+
+.card_infos table tr{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.card_infos table td{
+  padding: 0.5rem;
+}
+
+.card_infos table td:first-child{
+  flex: 1 1 30%;
+  font-weight: bold
+}
+
+.card_infos table td:last-child{
+  flex: 1 1 70%;
+}
+
+.account_menu_btn {
+  position: absolute;
+  border-radius: 50%;
+  padding: .3rem .75rem;
+  background: none;
+  border: none;
+  margin: 1rem;
+  right: 0;
+  z-index: 100;
+}
+
+
+.account_menu_btn:hover {
+  cursor: pointer;
+  box-shadow: 0 0 5px #333;
+}
+
+.account_menu {
+  position: absolute;
+  top: 1.5rem;
+  right: .5rem;
+  background: #f7f7f7;
+  opacity: .9;
+  border-radius: 12px;
+  display: none;
+  box-shadow: 0 0 5px #333;
+  transition: all .5s ease;
+  white-space: nowrap;
+}
+
+.account_menu ul {
+  list-style: none;
+}
+
+.account_menu ul li:first-child {
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.account_menu ul li:last-child {
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+
+.account_menu ul li {
+  padding: .5rem 1rem;
+  margin: 0;
+  width: 100%;
+}
+
+.account_menu ul li:hover {
+  background: #999;
+}
+
+.accounts .cards .account:hover {
+  cursor: pointer;
+}
+
+.card_bnts{
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin:2rem 1rem;
+  gap: .5rem;
+}
+
+.card_bnts input{
+  width: 70%;
+  border: none;
+  padding: .5rem;
+  border-radius: 16px;
+  color: #f7f7f7;
+  font-weight: bold
+}
+
+.card_bnts .freeze{
+  background: rgba(10, 110, 255, 0.8);
+}
+
+.card_bnts .activate{
+  background: rgba(0, 195, 0, 0.8);
+}
+
+.card_bnts .delete{
+  background: rgba(255, 0, 0, 0.8);
+}
+
+.card_bnts input:hover{
+  opacity: 0.75;
+  cursor: pointer
+}
+
+.card_history h2{
+  padding:.5rem .8rem;
+}
+
+.table-scroll {
+  margin: 0rem .5rem;
+  overflow: scroll;
+  overflow-x: hidden;
+  height: 21rem;
+  width: 95%;
+  padding: .1rem;
+  border-radius: 16px;
+  box-shadow: 0px 0px 5px gray;
+}
+
+.table-scroll table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+.table-scroll table tr {
+  border-bottom: 1px solid gray;
+  white-space: normal
+}
+
+.table-scroll table tr td:first-child {
+  max-width: 10ch;
+}
+
+.table-scroll table tr td:nth-child(4) {
+  overflow:scroll;
+  max-width: 23ch;
+  font-family: 'thoma', sans-serif;
+  font-weight: bold;
+  color: #333
+}
+
+.table-scroll td {
+  padding: 3px;
+  background: #f7f7f7;
+  font-size: .85rem
+}
+.main-table td label{
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: .25rem
+}
+.main-table td label span{
+  min-width: 14ch;
+  max-width: 25ch
+}
+.table-scroll table tr td img{
+  border-radius: 50%;
+  object-fit: cover;
+  object-position:0 100%;
+  width: 1.75rem;
+  height: 1.75rem;
+}
+
+
+span.error{
+  border: 2px solid red;
+  border-radius: 4px;
+  line-height: 1;
+  padding: 2px 2px 6px 6px;
+  background: #ffe6eb;
+  color: red;
+  font-weight: bold;
+  display: none;
+  text-align: center
+}
+
+/*style jquery validation errors*/
+
+label.error {
+  color: red;
+  font-size: .85rem;
+  font-weight: bold;
+  display: flex;
+  margin-top: 5px;
+  white-space: normal;
+  max-width: 20ch;
+}
+
+label.error.fail-alert {
+  border: 2px solid red;
+  border-radius: 4px;
+  line-height: 1;
+  padding: 2px;
+  background: #ffe6eb;
+  white-space: normal;
+  max-width: 20ch
+}
+
+input.valid.success-alert {
+  border: 2px solid #4CAF50!important;
+  color: green;
+}
+
+input.error {
+  border: 1px dashed red!important;
+  font-weight: 300;
+  color: red;
+}
+
+select.error {
+  border: 1px dashed red;
+  font-weight: 300;
+  color: red;
+}
+
+#descrption{
+  resize: none
+}

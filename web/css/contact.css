@@ -1,0 +1,106 @@
+.login-form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  height: 75vh;
+  padding: 3rem;
+  padding-top: 1rem;
+  margin:2rem
+}
+
+.login-form-container form {
+  width: 25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  border-radius: 16px;
+  padding: .5rem 1rem;
+  box-shadow: 0 0 5px #333;
+}
+
+.login-form-container form h1{
+  margin: auto;
+}
+
+.login-form-container form table {
+  width: 100%;
+  margin: .5rem;
+  border-collapse: collapse;
+}
+
+.login-form-container form table tr {
+  display: flex;
+  width: 100%;
+  padding: auto 1.5rem;
+}
+
+.login-form-container form table tr td {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: .5rem 1.5rem;
+
+}
+
+input, textarea {
+  width: 100%;
+  font-size: 1rem;
+  outline: none;
+  border: none;
+  margin: auto 1.5rem;
+  padding: .3rem;
+  background-color: #f7f7f7;
+  border: solid #333 2px;
+  box-shadow: 0 0 4px gray;
+  -webkit-transition: width .35s ease-in-out;
+  transition: width .35s ease-in-out;
+}
+
+input[type='submit'] {
+  width: 50%;
+  align-self: center;
+  border: 1px solid #333;
+  border-radius: 16px;
+  color: #f7f7f7;
+  background-color: #333;
+  padding: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-top: 1rem
+}
+
+input[type='submit']:hover {
+  color: #333;
+  background-color: #f7f7f7;
+}
+
+.login-form-container form table tr td a {
+  list-style: none;
+  text-decoration: none;
+  color: #333;
+}
+
+.login-form-container form table tr td a:hover {
+  color: #888;
+}
+
+.login-form-container i {
+  position: absolute;
+  padding-top: .5rem;
+  align-self: start;
+}
+span.error{
+  border: 2px solid red;
+  border-radius: 4px;
+  line-height: 1;
+  padding: 2px 2px 6px 6px;
+  background: #ffe6eb;
+  color: red;
+  font-weight: bold;
+  display: none;
+}

@@ -1,0 +1,337 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 31 juil. 2022, 11:35:05
+    Author     : Samir
+*/
+
+
+:root {
+  --background: #f7f7f7;
+}
+.popup_div{
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left:0;
+  z-index: 1200;
+  display: none;
+  transition: .5s ease;
+
+}
+.home_content.open {
+  padding-left: 5rem;
+}
+
+
+/* style account request pop up form*/
+
+.popup {
+  display: none;
+  border-radius: 12px;
+  box-shadow: 0 0 5px #333;
+  position: absolute;
+  background: var(--background);
+  z-index: 1250;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  filter: none;
+  padding: .5rem;
+  opacity: .8;
+  transition: .5s;
+}
+
+.main{
+  white-space: nowrap
+}
+.home_content {
+  background: var(--background);
+  padding: 1rem;
+  padding-left: 5.5rem;
+  height: 100vh;
+  width: 100vw;
+  overflow: auto;
+  position: relative;
+  z-index: 1;
+  gap: .5rem
+}
+
+
+/*.newCheck.popup{
+  display: flex;
+  flex-direction: column;
+  margin-top: 0rem;
+  padding: .5rem;
+  border-radius: 12px;
+  box-shadow: 0 0 5px #333;
+  transition: all 1s ease;
+  overflow: hidden;
+  position: relative;
+  gap: 1rem;
+}*/
+/*h2{
+  width: 100%;
+  padding: 1rem;
+  padding-bottom: 0rem
+}
+.newCheck form{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-self: center;
+  justify-content: center;
+}
+.newCheckTable {
+  width: 80%;
+  font-weight: bold
+}
+
+.newCheckTable tr{
+  width: 100%;
+  display: flex;
+  flex: 1 1 100%;
+  margin: 0.5rem 0rem;
+}
+.newCheckTable tr td {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+}
+.newCheckTable tr td:first-child {
+  width: 30%;
+  flex: 1 1 30%
+}
+.newCheckTable tr td:last-child {
+  width: 50%;
+  flex: 1 1 50%
+}
+
+.newCheckTable select, .newCheckTable input {
+  width: 100%;
+  text-align: center;
+  border-radius: 12px;
+  border: none;
+  box-shadow: 0 0 2px #333;
+  height: 1.15rem;
+}
+.newCheckTable input[type='submit']{
+  width: 50%;
+  align-self: end
+}*/
+/*.DepositWithCheck.popup{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 0rem;
+  padding: .5rem;
+  border-radius: 12px;
+  box-shadow: 0 0 5px #333;
+  transition: all 1s ease;
+  overflow: hidden;
+  position: relative;
+}*/
+
+/*.DepositWithCheck form{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-self: center;
+  padding: 2rem 1rem;
+}*/
+
+.Checks-History{
+  display: flex;
+  flex-direction: column;
+  margin-top: 0rem;
+  padding: .5rem;
+  border-radius: 12px;
+  box-shadow: 0 0 5px #333;
+  transition: all 1s ease;
+  overflow: hidden;
+  gap: 1.5rem;
+  height: 100%;
+}
+/*Style filter */
+.Checks-History .filter{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  padding: 1rem;
+  /*padding-bottom: 0;*/
+}
+
+.Checks-History  div.date {
+  width: 45%;
+  display: flex;
+  justify-content: center;
+  gap:2rem;
+}
+.Checks-History  div.date div{
+  display: flex;
+  justify-content: center;
+  gap: 9px;
+  font-weight: bold;
+}
+.Checks-History div.date input {
+  height: 1.5rem;
+  border: none;
+  box-shadow: 0 0 3px #333;
+  padding-left: .5rem;
+  border-radius: 16px;
+}
+.Checks-History div.search {
+  width: 35%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  align-content: center;
+  justify-content: center;
+}
+.Checks-History div.search input {
+  width: 100%;
+  height: 1.5rem;
+  border: none;
+  padding-right: .5rem;
+  padding-left: 2rem;
+  box-shadow: 0 0 3px #333;
+  border-radius: 12px;
+}
+Checks-History .search {
+  width: 45%;
+}
+
+.Checks-History .fa-magnifying-glass {
+  position: absolute;
+  margin-left: .5rem;
+}
+#date_filter{
+  display: flex;
+  justify-content: space-between;
+  gap: .5rem;
+}
+.ui-datepicker-trigger{
+  border-radius: 50%;
+  border:none
+}
+.ui-datepicker-trigger img{
+  width: 1.1rem;
+  height: .9rem;
+  padding: 0;
+}
+.date_range_filter.date.hasDatepicker{
+  height: 1rem;
+  border-radius: 16px!important;
+  border: none;
+  box-shadow: 0 0 3px gray;
+  text-align: center;
+}
+/*end style filter*/
+div.dt-buttons{
+  float: right!important;
+}
+.Btn{
+  border-radius: 16px !important;
+  color: #f7f7f7!important;
+  background: #333!important;
+  font-size: 0.75rem!important
+}
+.Btn:hover{
+  opacity: 0.55!important
+}
+
+.dataTables_wrapper .dataTables_paginate a.paginate_button.current {
+  color: #f7f7f7 !important;
+  border-radius: 16px !important;
+  background-color:#333 !important;
+}
+div.dataTables_wrapper div.dataTables_paginate {
+  float:none;
+  text-align:center
+}
+
+.dataTables_wrapper .dataTables_paginate a.paginate_button {
+  border-radius: 16px !important;
+}
+.dataTables_wrapper .dataTables_paginate a.paginate_button.current:hover {
+  color: #333 !important;
+  border-radius: 16px !important;
+  background-color:#f7f7f7 !important;
+}
+.dataTables_wrapper .dataTables_paginate a.paginate_active {
+  color: #fff !important;
+  border-radius: 16px !important;
+}
+
+.table-scroll table{
+  font-size: 0.75rem;
+  width: 100%;
+  border-collapse: collapse;
+  font-family: 'thoma', sans-serif
+}
+
+.table-scroll table thead{
+  background-color:#333 !important;
+  color: #f7f7f7;
+
+}
+.table-scroll table thead tr{
+  border: solid 1px #333;
+}
+/*
+.table-scroll table tbody tr{
+  border: solid 1px;
+}
+.table-scroll table tbody tr td{
+  border: solid 1px;
+}
+.table-scroll table tbody tr:nth-child(2n+1){
+  background: #e6e6e6
+}*/
+table.dataTable,
+table.dataTable th,
+table.dataTable td {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+.dataTables_scrollBody{
+  overflow-x:hidden !important;
+  overflow-y:auto !important;
+}
+.dataTables_scrollBody::-webkit-scrollbar {
+  display: block;
+  width: 5px;
+}
+.dataTables_scrollBody::-webkit-scrollbar-track {
+  background-color: #e4e4e4;
+  border-radius: 100px;
+}
+
+.dataTables_scrollBody::-webkit-scrollbar-thumb {
+  border-radius: 100px;
+  background: #333;
+  box-shadow: inset 2px 2px 5px 0 rgba(255, 255, 255, 0.5);
+}
+span.error{
+  border: 2px solid red;
+  border-radius: 4px;
+  line-height: 1;
+  padding: 2px 2px 6px 6px;
+  background: #ffe6eb;
+  color: red;
+  font-weight: bold;
+  display: none;
+  text-align: center
+}

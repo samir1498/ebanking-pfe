@@ -1,0 +1,128 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 26 juil. 2022, 11:47:54
+    Author     : Samir
+*/
+/* home content style */
+
+:root {
+  --background: #f7f7f7;
+}
+.popup_div{
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left:0;
+  z-index: 1200;
+  display: none;
+  transition: .5s ease;
+
+}
+.main{
+  white-space: nowrap
+}
+.home_content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: var(--background);
+  padding: 1rem;
+  padding-left: 5.5rem;
+  height: 100vh;
+  width: 100vw;
+  overflow: auto;
+  position: relative;
+  z-index: 1;
+  gap: .5rem
+}
+
+.home_content.open {
+  padding-left: 5rem;
+}
+
+
+/* style account request pop up form*/
+
+.popup {
+  display: none;
+  border-radius: 12px;
+  box-shadow: 0 0 5px #333;
+  position: absolute;
+  background: var(--background);
+  z-index: 1250;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  filter: none;
+  padding: .5rem;
+  opacity: .8;
+  transition: .5s;
+}
+.notifications_div{
+  height: 100%;
+  width: 35rem;
+  border-radius: 16px;
+  box-shadow: 0px 0px 5px gray;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.notifications_div h2{
+  text-align: center;
+  margin: 1rem;
+}
+
+.notifications_div i {
+  margin: 1.5rem 0rem;;
+}
+
+.notifications_div ul{
+  list-style: none;
+  width: 100%;
+  background: #f1f1f1;
+  overflow: hidden;
+  overflow-y: auto;
+  max-height: 33rem;
+
+}
+.notifications_div ul::-webkit-scrollbar {
+  display: block;
+  width: 10px;
+}
+
+.notifications_div ul::-webkit-scrollbar-track {
+  background-color: #e4e4e4;
+  border-radius: 100px;
+}
+
+.notifications_div ul::-webkit-scrollbar-thumb {
+  border-radius: 100px;
+  background: #333;
+  box-shadow: inset 2px 2px 5px 0 rgba(255, 255, 255, 0.5);
+}
+
+.notifications_div ul li{
+  width: 100%;
+  padding: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  margin: .5rem;
+  background: #f7f7f7;
+  box-shadow:0px 0px 5px gray;
+}
+.notifications_div ul li i{
+  font-size: 1rem;
+  margin: 0;
+}
+
+
+.notifications_div ul li:hover{
+  color: #f7f7f7;
+  background: #333;
+}
+

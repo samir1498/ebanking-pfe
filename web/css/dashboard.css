@@ -1,0 +1,166 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 9 juil. 2022, 10:17:18
+    Author     : Samir
+*/
+
+.main{
+  white-space: nowrap
+}
+.home_content {
+  display: flex;
+  background: #f7f7f7;
+  padding: 1rem;
+  padding-left: 5.5rem;
+  height: 100vh;
+  width: 100vw;
+  overflow: auto;
+  gap: .5rem;
+}
+
+.home_content.open {
+  padding-left: 5rem;
+
+}
+.statistiques{
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-areas:  "save income outcome "
+    "save foo foo "
+    "check foo foo"
+    "check foo foo";
+  gap: .75rem;
+}
+.outcome{
+  width: 14.5rem;
+  border-radius: 16px;
+  box-shadow: 0 0 5px black;
+  min-height: 5rem;
+  background: #888;
+  position: relative;
+  color: #f7f7f7
+}
+
+.outcome h2{
+  padding: .75rem
+}
+
+.outcome h5{
+  padding: .75rem;
+  padding-top: 0
+}
+.income{
+  width: 14.5rem;
+  border-radius: 16px;
+  box-shadow: 0 0 5px black;
+  background: rgba(10, 99, 255, 0.75);
+  position: relative;
+   color: #f7f7f7
+}
+.income h2{
+  padding: .75rem
+}
+.income h5{
+  padding: .75rem;
+  padding-top: 0
+}
+.arrow{
+  position: absolute;
+  width: 2.75rem;
+  height: 2.75rem;
+  top: 50%;
+  right: 15%;
+  font-size: 2.75rem;
+  transform: translate(55%,-60%);
+  color: whitesmoke;
+  border-radius: 50%;
+  padding: 0;
+}
+
+.foo{
+  width: 30rem;
+  border-radius: 16px;
+  box-shadow: 0 0 5px gray;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.foo .pie-chart{
+  width: 100%;
+}
+
+.foo .percentage{
+  font-size: 3rem
+}
+#last_month_expenses{
+  height: 100%;
+  width: 100%;
+}
+.total_savings{
+  width: 100%;
+  height: 18rem;
+  max-height: fit-content;
+  border-radius: 16px;
+  box-shadow: 0 0 5px gray;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1rem 0.5rem;
+  grid-area: save;
+  min-width: 25rem;
+}
+.total_budget{
+  width: 100%;
+  min-width: 25rem;
+  height: 18rem;
+  max-height: fit-content;
+  border-radius: 16px;
+  box-shadow: 0 0 5px gray;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1rem 0.5rem;
+  grid-area: check;
+}
+.charts{
+  display: flex;
+  flex: 100%;
+  height: 15rem;
+}
+.pie-chart{
+  position: relative;
+}
+#savings_total_percentage{
+  height: 100%;
+  width: 100%
+}
+#savings_percentage{
+  height: 100%;
+  width: 100%
+}
+
+#budget_total_percentage{
+  height: 100%;
+  width: 100%;
+  min-width: 10rem;
+
+}
+#budget_percentage{
+  height: 100%;
+  width: 100%;
+  min-width: 10rem;
+}
+.percentage{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: bold;
+  font-size: 1.25rem;
+  font-family: 'thoma', sans-serif
+}
